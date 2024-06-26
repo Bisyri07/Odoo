@@ -2665,3 +2665,29 @@ odoo.addons.mail.models.partner_devices.InvalidVapidError: Invalid VAPID public 
 2024-06-26 06:50:06,679 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.010s). 
 2024-06-26 06:59:18,996 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
 2024-06-26 06:59:19,004 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.008s). 
+2024-06-26 07:09:29,611 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-06-26 07:09:29,643 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.032s). 
+2024-06-26 07:19:40,162 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-06-26 07:19:40,188 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.027s). 
+2024-06-26 07:25:00,505 13472 INFO ? odoo.service.server: Initiating shutdown 
+2024-06-26 07:25:00,506 13472 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-06-26 07:25:00,658 13472 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-06-26 07:25:07,779 14364 INFO ? odoo: Odoo version 17.0-20240608 
+2024-06-26 07:25:07,780 14364 INFO ? odoo: Using configuration file at C:\Odoo\server\odoo.conf 
+2024-06-26 07:25:07,780 14364 INFO ? odoo: addons paths: ['C:\\Odoo\\server\\odoo\\addons', 'c:\\odoo\\sessions\\addons\\17.0', 'c:\\odoo\\server\\odoo\\addons', 'c:\\odoo\\server\\addons'] 
+2024-06-26 07:25:07,780 14364 INFO ? odoo: database: odoo17_postgre@localhost:5432 
+2024-06-26 07:25:08,454 14364 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Odoo\thirdparty\wkhtmltopdf.exe 
+2024-06-26 07:25:10,314 14364 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-LFKPJ6Q:8069 
+2024-06-26 07:25:11,266 14364 INFO odoo_17 odoo.modules.loading: loading 1 modules... 
+2024-06-26 07:25:11,299 14364 INFO odoo_17 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2024-06-26 07:25:11,788 14364 INFO odoo_17 odoo.modules.loading: loading 94 modules... 
+2024-06-26 07:25:16,793 14364 INFO odoo_17 odoo.modules.loading: 94 modules loaded in 5.00s, 0 queries (+0 extra) 
+2024-06-26 07:25:17,277 14364 INFO odoo_17 odoo.modules.loading: Modules loaded. 
+2024-06-26 07:25:17,294 14364 INFO odoo_17 odoo.modules.registry: Registry loaded in 6.259s 
+2024-06-26 07:25:17,296 14364 INFO odoo_17 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-26 07:25:17,565 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:25:17] "GET /websocket HTTP/1.1" 101 - 22 0.210 6.323
+2024-06-26 07:25:17,810 14364 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-26 07:27:23,193 14364 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'estate', defaulting to LGPL-3 
+2024-06-26 07:27:23,322 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:27:23] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 5 0.008 1.912
+2024-06-26 07:30:10,558 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-06-26 07:30:10,584 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.026s). 
