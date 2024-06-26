@@ -2419,3 +2419,247 @@ odoo.addons.mail.models.partner_devices.InvalidVapidError: Invalid VAPID public 
 2024-06-26 06:02:56,910 5252 INFO ? odoo.service.server: Initiating shutdown 
 2024-06-26 06:02:56,910 5252 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2024-06-26 06:02:57,222 5252 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2024-06-26 06:03:04,097 13472 INFO ? odoo: Odoo version 17.0-20240608 
+2024-06-26 06:03:04,097 13472 INFO ? odoo: Using configuration file at C:\Odoo\server\odoo.conf 
+2024-06-26 06:03:04,097 13472 INFO ? odoo: addons paths: ['C:\\Odoo\\server\\odoo\\addons', 'c:\\odoo\\sessions\\addons\\17.0', 'c:\\odoo\\server\\odoo\\addons', 'c:\\odoo\\server\\addons'] 
+2024-06-26 06:03:04,097 13472 INFO ? odoo: database: odoo17_postgre@localhost:5432 
+2024-06-26 06:03:04,697 13472 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Odoo\thirdparty\wkhtmltopdf.exe 
+2024-06-26 06:03:05,771 13472 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-LFKPJ6Q:8069 
+2024-06-26 06:03:06,430 13472 INFO odoo_17 odoo.modules.loading: loading 1 modules... 
+2024-06-26 06:03:06,448 13472 INFO odoo_17 odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2024-06-26 06:03:06,735 13472 INFO odoo_17 odoo.modules.loading: loading 79 modules... 
+2024-06-26 06:03:09,505 13472 INFO odoo_17 odoo.modules.loading: 79 modules loaded in 2.77s, 0 queries (+0 extra) 
+2024-06-26 06:03:09,957 13472 INFO odoo_17 odoo.modules.loading: Modules loaded. 
+2024-06-26 06:03:09,973 13472 INFO odoo_17 odoo.modules.registry: Registry loaded in 3.748s 
+2024-06-26 06:03:10,058 13472 INFO odoo_17 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-26 06:03:10,117 13472 INFO odoo_17 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-26 06:03:10,336 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:10] "GET /websocket HTTP/1.1" 101 - 5 0.077 3.742
+2024-06-26 06:03:10,508 13472 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-06-26 06:03:12,238 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:12] "GET /web?debug=1 HTTP/1.1" 200 - 95 0.317 5.696
+2024-06-26 06:03:14,255 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:14] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.049 0.051
+2024-06-26 06:03:14,313 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:14] "POST /mail/init_messaging HTTP/1.1" 200 - 54 0.158 0.086
+2024-06-26 06:03:14,512 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:14] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.008 0.008
+2024-06-26 06:03:14,748 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:14] "POST /mail/load_message_failures HTTP/1.1" 200 - 4 0.000 0.028
+2024-06-26 06:03:14,947 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:14] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.016 0.016
+2024-06-26 06:03:14,947 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:14] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.031
+2024-06-26 06:03:17,091 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:17] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 4 0.016 2.973
+2024-06-26 06:03:17,138 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:17] "POST /web/action/load HTTP/1.1" 200 - 9 0.062 3.437
+2024-06-26 06:03:17,138 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:17] "POST /web/dataset/call_kw/mail.partner.device/register_devices HTTP/1.1" 200 - 7 0.016 2.843
+2024-06-26 06:03:17,671 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:17] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 47 0.078 0.109
+2024-06-26 06:03:17,772 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:17] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.017
+2024-06-26 06:03:18,137 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:18] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.095 0.021
+2024-06-26 06:03:18,255 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:18] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.017 0.216
+2024-06-26 06:03:18,705 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:03:18] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.009
+2024-06-26 06:10:06,078 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-06-26 06:10:06,093 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.016s). 
+2024-06-26 06:19:22,707 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-06-26 06:19:22,723 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.016s). 
+2024-06-26 06:29:33,203 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-06-26 06:29:33,235 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.032s). 
+2024-06-26 06:38:02,011 13472 INFO odoo_17 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['Sales'] to user mbisyri33@gmail.com #2 via 127.0.0.1 
+2024-06-26 06:38:02,012 13472 INFO odoo_17 odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2024-06-26 06:38:02,013 13472 INFO odoo_17 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['Sales'] to user mbisyri33@gmail.com #2 via 127.0.0.1 
+2024-06-26 06:38:02,312 13472 INFO odoo_17 odoo.modules.loading: loading 1 modules... 
+2024-06-26 06:38:02,330 13472 INFO odoo_17 odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2024-06-26 06:38:02,374 13472 INFO odoo_17 odoo.modules.loading: updating modules list 
+2024-06-26 06:38:02,379 13472 INFO odoo_17 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2024-06-26 06:38:04,218 13472 INFO odoo_17 odoo.modules.loading: loading 79 modules... 
+2024-06-26 06:38:04,366 13472 INFO odoo_17 odoo.modules.loading: 79 modules loaded in 0.15s, 0 queries (+0 extra) 
+2024-06-26 06:38:04,375 13472 INFO odoo_17 odoo.modules.loading: loading 94 modules... 
+2024-06-26 06:38:04,375 13472 INFO odoo_17 odoo.modules.loading: Loading module sales_team (35/94) 
+2024-06-26 06:38:04,961 13472 INFO odoo_17 odoo.modules.registry: module sales_team: creating or updating database tables 
+2024-06-26 06:38:05,131 13472 INFO odoo_17 odoo.models: Prepare computation of res.users.sale_team_id 
+2024-06-26 06:38:05,734 13472 INFO odoo_17 odoo.modules.loading: loading sales_team/security/sales_team_security.xml 
+2024-06-26 06:38:06,364 13472 INFO odoo_17 odoo.modules.loading: loading sales_team/security/ir.model.access.csv 
+2024-06-26 06:38:06,424 13472 INFO odoo_17 odoo.modules.loading: loading sales_team/data/crm_team_data.xml 
+2024-06-26 06:38:06,568 13472 INFO odoo_17 odoo.modules.loading: loading sales_team/views/crm_tag_views.xml 
+2024-06-26 06:38:06,615 13472 INFO odoo_17 odoo.modules.loading: loading sales_team/views/crm_team_views.xml 
+2024-06-26 06:38:06,736 13472 INFO odoo_17 odoo.modules.loading: loading sales_team/views/crm_team_member_views.xml 
+2024-06-26 06:38:06,837 13472 INFO odoo_17 odoo.modules.loading: loading sales_team/views/mail_activity_views.xml 
+2024-06-26 06:38:06,860 13472 INFO odoo_17 odoo.modules.loading: loading sales_team/views/res_partner_views.xml 
+2024-06-26 06:38:07,026 13472 INFO odoo_17 odoo.modules.loading: Module sales_team loaded in 2.65s, 553 queries (+553 other) 
+2024-06-26 06:38:07,026 13472 INFO odoo_17 odoo.modules.loading: Loading module sale (75/94) 
+2024-06-26 06:38:08,057 13472 INFO odoo_17 odoo.modules.registry: module sale: creating or updating database tables 
+2024-06-26 06:38:08,424 13472 INFO odoo_17 odoo.models: Prepare computation of product.template.service_type 
+2024-06-26 06:38:08,425 13472 INFO odoo_17 odoo.models: Prepare computation of product.template.expense_policy 
+2024-06-26 06:38:08,425 13472 INFO odoo_17 odoo.models: Prepare computation of product.template.invoice_policy 
+2024-06-26 06:38:10,554 13472 INFO odoo_17 odoo.modules.loading: loading sale/security/ir.model.access.csv 
+2024-06-26 06:38:10,690 13472 INFO odoo_17 odoo.modules.loading: loading sale/security/res_groups.xml 
+2024-06-26 06:38:10,826 13472 INFO odoo_17 odoo.modules.loading: loading sale/security/ir_rules.xml 
+2024-06-26 06:38:11,185 13472 INFO odoo_17 odoo.modules.loading: loading sale/report/account_invoice_report_views.xml 
+2024-06-26 06:38:11,230 13472 INFO odoo_17 odoo.modules.loading: loading sale/report/ir_actions_report_templates.xml 
+2024-06-26 06:38:11,278 13472 INFO odoo_17 odoo.modules.loading: loading sale/report/ir_actions_report.xml 
+2024-06-26 06:38:11,311 13472 INFO odoo_17 odoo.modules.loading: loading sale/report/sale_report_views.xml 
+2024-06-26 06:38:11,438 13472 INFO odoo_17 odoo.modules.loading: loading sale/data/ir_cron.xml 
+2024-06-26 06:38:11,460 13472 INFO odoo_17 odoo.modules.loading: loading sale/data/ir_sequence_data.xml 
+2024-06-26 06:38:11,476 13472 INFO odoo_17 odoo.modules.loading: loading sale/data/mail_activity_type_data.xml 
+2024-06-26 06:38:11,511 13472 INFO odoo_17 odoo.modules.loading: loading sale/data/mail_message_subtype_data.xml 
+2024-06-26 06:38:11,552 13472 INFO odoo_17 odoo.modules.loading: loading sale/data/mail_template_data.xml 
+2024-06-26 06:38:11,598 13472 INFO odoo_17 odoo.modules.loading: loading sale/data/ir_config_parameter.xml 
+2024-06-26 06:38:11,614 13472 INFO odoo_17 odoo.modules.loading: loading sale/data/onboarding_data.xml 
+2024-06-26 06:38:11,678 13472 INFO odoo_17 odoo.modules.loading: loading sale/wizard/account_accrued_orders_wizard_views.xml 
+2024-06-26 06:38:11,692 13472 INFO odoo_17 odoo.modules.loading: loading sale/wizard/mass_cancel_orders_views.xml 
+2024-06-26 06:38:11,713 13472 INFO odoo_17 odoo.modules.loading: loading sale/wizard/payment_link_wizard_views.xml 
+2024-06-26 06:38:11,740 13472 INFO odoo_17 odoo.modules.loading: loading sale/wizard/res_config_settings_views.xml 
+2024-06-26 06:38:11,890 13472 INFO odoo_17 odoo.modules.loading: loading sale/wizard/sale_make_invoice_advance_views.xml 
+2024-06-26 06:38:11,921 13472 INFO odoo_17 odoo.modules.loading: loading sale/wizard/sale_order_cancel_views.xml 
+2024-06-26 06:38:11,938 13472 INFO odoo_17 odoo.modules.loading: loading sale/wizard/sale_order_discount_views.xml 
+2024-06-26 06:38:11,953 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/sale_order_views.xml 
+2024-06-26 06:38:12,309 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/account_views.xml 
+2024-06-26 06:38:12,415 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/crm_team_views.xml 
+2024-06-26 06:38:12,488 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/mail_activity_views.xml 
+2024-06-26 06:38:12,499 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/mail_activity_plan_views.xml 
+2024-06-26 06:38:12,512 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/payment_views.xml 
+2024-06-26 06:38:12,548 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/product_document_views.xml 
+2024-06-26 06:38:12,612 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/product_packaging_views.xml 
+2024-06-26 06:38:12,647 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/product_views.xml 
+2024-06-26 06:38:12,781 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/res_partner_views.xml 
+2024-06-26 06:38:12,926 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/sale_order_line_views.xml 
+2024-06-26 06:38:12,984 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/sale_portal_templates.xml 
+2024-06-26 06:38:13,098 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/utm_campaign_views.xml 
+2024-06-26 06:38:13,142 13472 INFO odoo_17 odoo.modules.loading: loading sale/views/sale_menus.xml 
+2024-06-26 06:38:13,637 13472 INFO odoo_17 odoo.modules.loading: Module sale loaded in 6.61s, 2480 queries (+2480 other) 
+2024-06-26 06:38:13,637 13472 INFO odoo_17 odoo.modules.loading: Loading module mass_mailing_sale (78/94) 
+2024-06-26 06:38:14,116 13472 INFO odoo_17 odoo.modules.registry: module mass_mailing_sale: creating or updating database tables 
+2024-06-26 06:38:14,314 13472 INFO odoo_17 odoo.modules.loading: loading mass_mailing_sale/views/mailing_mailing_views.xml 
+2024-06-26 06:38:14,391 13472 INFO odoo_17 odoo.modules.loading: Module mass_mailing_sale loaded in 0.75s, 90 queries (+90 other) 
+2024-06-26 06:38:14,391 13472 INFO odoo_17 odoo.modules.loading: Loading module sale_async_emails (82/94) 
+2024-06-26 06:38:14,776 13472 INFO odoo_17 odoo.modules.registry: module sale_async_emails: creating or updating database tables 
+2024-06-26 06:38:14,957 13472 INFO odoo_17 odoo.modules.loading: loading sale_async_emails/data/ir_config_parameter.xml 
+2024-06-26 06:38:14,985 13472 INFO odoo_17 odoo.modules.loading: loading sale_async_emails/data/ir_cron.xml 
+2024-06-26 06:38:15,039 13472 INFO odoo_17 odoo.modules.loading: Module sale_async_emails loaded in 0.65s, 75 queries (+75 other) 
+2024-06-26 06:38:15,039 13472 INFO odoo_17 odoo.modules.loading: Loading module sale_management (83/94) 
+2024-06-26 06:38:15,838 13472 INFO odoo_17 odoo.modules.registry: module sale_management: creating or updating database tables 
+2024-06-26 06:38:16,670 13472 INFO odoo_17 odoo.modules.loading: loading sale_management/data/digest_data.xml 
+2024-06-26 06:38:16,699 13472 INFO odoo_17 odoo.modules.loading: loading sale_management/security/ir.model.access.csv 
+2024-06-26 06:38:16,734 13472 INFO odoo_17 odoo.modules.loading: loading sale_management/security/sale_management_security.xml 
+2024-06-26 06:38:16,797 13472 INFO odoo_17 odoo.modules.loading: loading sale_management/report/sale_report_templates.xml 
+2024-06-26 06:38:16,890 13472 INFO odoo_17 odoo.modules.loading: loading sale_management/views/sale_order_template_views.xml 
+2024-06-26 06:38:16,945 13472 INFO odoo_17 odoo.modules.loading: loading sale_management/views/digest_views.xml 
+2024-06-26 06:38:16,972 13472 INFO odoo_17 odoo.modules.loading: loading sale_management/views/res_config_settings_views.xml 
+2024-06-26 06:38:17,063 13472 INFO odoo_17 odoo.modules.loading: loading sale_management/views/sale_order_views.xml 
+2024-06-26 06:38:17,099 13472 INFO odoo_17 odoo.modules.loading: loading sale_management/views/sale_portal_templates.xml 
+2024-06-26 06:38:17,120 13472 INFO odoo_17 odoo.modules.loading: loading sale_management/views/sale_management_menus.xml 
+2024-06-26 06:38:17,201 13472 INFO odoo_17 odoo.modules.loading: Module sale_management loaded in 2.16s, 442 queries (+442 other) 
+2024-06-26 06:38:17,201 13472 INFO odoo_17 odoo.modules.loading: Loading module sale_product_configurator (84/94) 
+2024-06-26 06:38:17,593 13472 INFO odoo_17 odoo.modules.registry: module sale_product_configurator: creating or updating database tables 
+2024-06-26 06:38:17,851 13472 INFO odoo_17 odoo.modules.loading: loading sale_product_configurator/views/product_template_views.xml 
+2024-06-26 06:38:17,892 13472 INFO odoo_17 odoo.modules.loading: loading sale_product_configurator/views/sale_order_views.xml 
+2024-06-26 06:38:17,957 13472 INFO odoo_17 odoo.modules.loading: Module sale_product_configurator loaded in 0.76s, 124 queries (+124 other) 
+2024-06-26 06:38:17,957 13472 INFO odoo_17 odoo.modules.loading: Loading module sale_sms (85/94) 
+2024-06-26 06:38:18,345 13472 INFO odoo_17 odoo.modules.loading: loading sale_sms/security/ir.model.access.csv 
+2024-06-26 06:38:18,439 13472 INFO odoo_17 odoo.modules.loading: loading sale_sms/security/security.xml 
+2024-06-26 06:38:18,488 13472 INFO odoo_17 odoo.modules.loading: Module sale_sms loaded in 0.53s, 36 queries (+36 other) 
+2024-06-26 06:38:18,489 13472 INFO odoo_17 odoo.modules.loading: Loading module sale_stock (86/94) 
+2024-06-26 06:38:18,965 13472 INFO odoo_17 odoo.modules.registry: module sale_stock: creating or updating database tables 
+2024-06-26 06:38:19,971 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/security/sale_stock_security.xml 
+2024-06-26 06:38:19,997 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/security/ir.model.access.csv 
+2024-06-26 06:38:20,039 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/views/sale_order_views.xml 
+2024-06-26 06:38:20,204 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/views/stock_route_views.xml 
+2024-06-26 06:38:20,229 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/views/res_config_settings_views.xml 
+2024-06-26 06:38:20,398 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/views/sale_stock_portal_template.xml 
+2024-06-26 06:38:20,419 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/views/stock_lot_views.xml 
+2024-06-26 06:38:20,435 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/views/res_users_views.xml 
+2024-06-26 06:38:20,513 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/report/sale_order_report_templates.xml 
+2024-06-26 06:38:20,535 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/report/stock_report_deliveryslip.xml 
+2024-06-26 06:38:20,553 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/data/mail_templates.xml 
+2024-06-26 06:38:20,576 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/data/sale_stock_data.xml 
+2024-06-26 06:38:20,587 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/wizard/stock_rules_report_views.xml 
+2024-06-26 06:38:20,604 13472 INFO odoo_17 odoo.modules.loading: loading sale_stock/wizard/sale_order_cancel_views.xml 
+2024-06-26 06:38:20,663 13472 INFO odoo_17 odoo.modules.loading: Module sale_stock loaded in 2.17s, 667 queries (+667 other) 
+2024-06-26 06:38:20,663 13472 INFO odoo_17 odoo.modules.loading: Loading module spreadsheet_dashboard_sale (87/94) 
+2024-06-26 06:38:21,054 13472 INFO odoo_17 odoo.modules.loading: loading spreadsheet_dashboard_sale/data/dashboards.xml 
+2024-06-26 06:38:21,211 13472 INFO odoo_17 odoo.modules.loading: Module spreadsheet_dashboard_sale loaded in 0.55s, 31 queries (+31 other) 
+2024-06-26 06:38:21,211 13472 INFO odoo_17 odoo.modules.loading: Loading module pos_sale (88/94) 
+2024-06-26 06:38:21,644 13472 INFO odoo_17 odoo.modules.registry: module pos_sale: creating or updating database tables 
+2024-06-26 06:38:22,107 13472 INFO odoo_17 odoo.modules.loading: loading pos_sale/data/pos_sale_data.xml 
+2024-06-26 06:38:22,302 13472 INFO odoo_17 odoo.modules.loading: loading pos_sale/security/pos_sale_security.xml 
+2024-06-26 06:38:22,337 13472 INFO odoo_17 odoo.modules.loading: loading pos_sale/security/ir.model.access.csv 
+2024-06-26 06:38:22,355 13472 INFO odoo_17 odoo.modules.loading: loading pos_sale/views/point_of_sale_report.xml 
+2024-06-26 06:38:22,383 13472 INFO odoo_17 odoo.modules.loading: loading pos_sale/views/sale_order_views.xml 
+2024-06-26 06:38:22,415 13472 INFO odoo_17 odoo.modules.loading: loading pos_sale/views/pos_order_views.xml 
+2024-06-26 06:38:22,449 13472 INFO odoo_17 odoo.modules.loading: loading pos_sale/views/sales_team_views.xml 
+2024-06-26 06:38:22,512 13472 INFO odoo_17 odoo.modules.loading: loading pos_sale/views/res_config_settings_views.xml 
+2024-06-26 06:38:22,592 13472 INFO odoo_17 odoo.modules.loading: loading pos_sale/views/stock_template.xml 
+2024-06-26 06:38:22,644 13472 INFO odoo_17 odoo.modules.loading: Module pos_sale loaded in 1.43s, 371 queries (+371 other) 
+2024-06-26 06:38:22,645 13472 INFO odoo_17 odoo.modules.loading: Loading module pos_sale_product_configurator (89/94) 
+2024-06-26 06:38:23,125 13472 INFO odoo_17 odoo.modules.registry: module pos_sale_product_configurator: creating or updating database tables 
+2024-06-26 06:38:23,346 13472 INFO odoo_17 odoo.modules.loading: Module pos_sale_product_configurator loaded in 0.70s, 52 queries (+52 other) 
+2024-06-26 06:38:23,347 13472 INFO odoo_17 odoo.modules.loading: Loading module sale_pdf_quote_builder (90/94) 
+2024-06-26 06:38:23,762 13472 INFO odoo_17 odoo.modules.registry: module sale_pdf_quote_builder: creating or updating database tables 
+2024-06-26 06:38:24,084 13472 INFO odoo_17 odoo.modules.loading: loading sale_pdf_quote_builder/report/ir_actions_report.xml 
+2024-06-26 06:38:24,099 13472 INFO odoo_17 odoo.modules.loading: loading sale_pdf_quote_builder/views/sale_order_template_views.xml 
+2024-06-26 06:38:24,131 13472 INFO odoo_17 odoo.modules.loading: loading sale_pdf_quote_builder/wizards/res_config_settings_views.xml 
+2024-06-26 06:38:24,350 13472 INFO odoo_17 odoo.modules.loading: Module sale_pdf_quote_builder loaded in 1.00s, 198 queries (+198 other) 
+2024-06-26 06:38:24,351 13472 INFO odoo_17 odoo.modules.loading: Loading module sale_service (91/94) 
+2024-06-26 06:38:24,731 13472 INFO odoo_17 odoo.modules.registry: module sale_service: creating or updating database tables 
+2024-06-26 06:38:24,925 13472 INFO odoo_17 odoo.modules.loading: Module sale_service loaded in 0.57s, 56 queries (+56 other) 
+2024-06-26 06:38:24,925 13472 INFO odoo_17 odoo.modules.loading: Loading module sale_project (93/94) 
+2024-06-26 06:38:25,398 13472 INFO odoo_17 odoo.modules.registry: module sale_project: creating or updating database tables 
+2024-06-26 06:38:26,167 13472 INFO odoo_17 odoo.modules.loading: loading sale_project/security/ir.model.access.csv 
+2024-06-26 06:38:26,183 13472 INFO odoo_17 odoo.modules.loading: loading sale_project/security/sale_project_security.xml 
+2024-06-26 06:38:26,214 13472 INFO odoo_17 odoo.modules.loading: loading sale_project/views/product_views.xml 
+2024-06-26 06:38:26,245 13472 INFO odoo_17 odoo.modules.loading: loading sale_project/views/project_task_views.xml 
+2024-06-26 06:38:26,495 13472 INFO odoo_17 odoo.modules.loading: loading sale_project/views/sale_order_line_views.xml 
+2024-06-26 06:38:26,526 13472 INFO odoo_17 odoo.modules.loading: loading sale_project/views/sale_order_views.xml 
+2024-06-26 06:38:26,573 13472 INFO odoo_17 odoo.modules.loading: loading sale_project/views/sale_project_portal_templates.xml 
+2024-06-26 06:38:26,605 13472 INFO odoo_17 odoo.modules.loading: loading sale_project/views/project_sharing_views.xml 
+2024-06-26 06:38:26,620 13472 INFO odoo_17 odoo.modules.loading: loading sale_project/views/project_views.xml 
+2024-06-26 06:38:26,714 13472 INFO odoo_17 odoo.modules.loading: Module sale_project loaded in 1.79s, 544 queries (+544 other) 
+2024-06-26 06:38:26,714 13472 INFO odoo_17 odoo.modules.loading: Loading module sale_project_stock (94/94) 
+2024-06-26 06:38:27,089 13472 INFO odoo_17 odoo.modules.registry: module sale_project_stock: creating or updating database tables 
+2024-06-26 06:38:27,183 13472 INFO odoo_17 odoo.modules.loading: loading sale_project_stock/views/stock_move_views.xml 
+2024-06-26 06:38:27,308 13472 INFO odoo_17 odoo.modules.loading: Module sale_project_stock loaded in 0.59s, 56 queries (+56 other) 
+2024-06-26 06:38:27,308 13472 INFO odoo_17 odoo.modules.loading: 94 modules loaded in 22.93s, 5775 queries (+5775 extra) 
+2024-06-26 06:38:30,308 13472 INFO odoo_17 odoo.modules.loading: Modules loaded. 
+2024-06-26 06:38:30,323 13472 INFO odoo_17 odoo.modules.registry: Registry loaded in 28.067s 
+2024-06-26 06:38:30,323 13472 INFO odoo_17 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-06-26 06:38:30,339 13472 INFO odoo_17 odoo.modules.registry: Registry changed, signaling through the database 
+2024-06-26 06:38:30,339 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:38:30] "POST /web/dataset/call_button HTTP/1.1" 200 - 8624 11.042 17.298
+2024-06-26 06:38:30,793 13472 INFO odoo_17 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-06-26 06:38:32,383 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:38:32] "GET /web HTTP/1.1" 200 - 77 0.091 1.830
+2024-06-26 06:38:33,076 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:38:33] "GET /web/webclient/load_menus/c532295b24576f67d9d597f9f16409b46b2eb8910a5c099e1ebba8786a7c6a83 HTTP/1.1" 200 - 2 0.015 0.139
+2024-06-26 06:38:33,104 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:38:33] "GET /web/webclient/translations/5e86155e58d5f391b028917e8505cac2d5c900aa?lang=en_US HTTP/1.1" 200 - 3 0.044 0.136
+2024-06-26 06:38:57,544 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2024-06-26 06:38:57,624 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `Mail: Email Queue Manager` (0.081s). 
+2024-06-26 06:38:57,671 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2024-06-26 06:38:57,691 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `Notification: Send scheduled message notifications` (0.020s). 
+2024-06-26 06:38:57,710 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `Sales: Send pending emails`. 
+2024-06-26 06:38:57,738 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `Sales: Send pending emails` (0.028s). 
+2024-06-26 06:38:57,828 13472 INFO odoo_17 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/c6ca1f1/web.assets_web.min.css (id:546) 
+2024-06-26 06:38:57,834 13472 INFO odoo_17 odoo.addons.base.models.assetsbundle: Deleting attachments [539] (matching /web/assets/_______/web.assets_web.min.css) because it was replaced with /web/assets/c6ca1f1/web.assets_web.min.css 
+2024-06-26 06:38:58,081 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:38:58] "GET /web/assets/c6ca1f1/web.assets_web.min.css HTTP/1.1" 200 - 16 0.264 25.019
+2024-06-26 06:39:03,221 13472 INFO odoo_17 odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/6bb3891/web.assets_web.min.js (id:547) 
+2024-06-26 06:39:03,223 13472 INFO odoo_17 odoo.addons.base.models.assetsbundle: Deleting attachments [540] (matching /web/assets/_______/web.assets_web.min.js) because it was replaced with /web/assets/6bb3891/web.assets_web.min.js 
+2024-06-26 06:39:03,371 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:39:03] "GET /web/assets/6bb3891/web.assets_web.min.js HTTP/1.1" 200 - 13 0.067 30.504
+2024-06-26 06:39:05,022 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:39:05] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.001 0.015
+2024-06-26 06:39:05,531 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:39:05] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 4 0.023 0.017
+2024-06-26 06:39:05,532 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:39:05] "POST /mail/init_messaging HTTP/1.1" 200 - 52 0.075 0.095
+2024-06-26 06:39:05,596 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:39:05] "POST /web/action/load HTTP/1.1" 200 - 6 0.008 0.024
+2024-06-26 06:39:05,627 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:39:05] "POST /web/dataset/call_kw/mail.partner.device/register_devices HTTP/1.1" 200 - 7 0.009 0.014
+2024-06-26 06:39:05,654 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:39:05] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.005 0.012
+2024-06-26 06:39:05,709 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:39:05] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 9 0.016 0.030
+2024-06-26 06:39:05,739 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:39:05] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.018
+2024-06-26 06:39:05,941 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:39:05] "POST /mail/inbox/messages HTTP/1.1" 200 - 6 0.012 0.018
+2024-06-26 06:39:06,217 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:39:06] "GET /web/image/res.partner/2/avatar_128?unique=2024-06-26%2006%3A38%3A02 HTTP/1.1" 200 - 6 0.021 0.051
+2024-06-26 06:39:06,303 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:39:06] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.031 0.013
+2024-06-26 06:39:06,387 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete: Sync with remote DB`. 
+2024-06-26 06:39:06,400 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `Partner Autocomplete: Sync with remote DB` (0.013s). 
+2024-06-26 06:39:07,821 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:39:07] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.016 0.000
+2024-06-26 06:39:58,773 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `Digest Emails`. 
+2024-06-26 06:39:59,382 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `Digest Emails` (0.609s). 
+2024-06-26 06:39:59,398 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2024-06-26 06:39:59,413 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `SMS: SMS Queue Manager` (0.016s). 
+2024-06-26 06:39:59,413 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2024-06-26 06:39:59,429 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `Snailmail: process letters queue` (0.016s). 
+2024-06-26 06:39:59,445 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-06-26 06:39:59,445 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.000s). 
+2024-06-26 06:40:50,063 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:40:50] "POST /web/action/load HTTP/1.1" 200 - 9 0.035 0.036
+2024-06-26 06:40:50,408 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:40:50] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 47 0.093 0.064
+2024-06-26 06:40:50,454 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:40:50] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.008
+2024-06-26 06:40:50,854 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:40:50] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 41 0.077 0.033
+2024-06-26 06:40:50,903 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:40:50] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.014 0.113
+2024-06-26 06:41:43,419 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:41:43] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.015 0.028
+2024-06-26 06:41:43,419 13472 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 06:41:43] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.007 0.038
+2024-06-26 06:50:06,668 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-06-26 06:50:06,679 13472 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.010s). 
