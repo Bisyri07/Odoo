@@ -2691,3 +2691,44 @@ odoo.addons.mail.models.partner_devices.InvalidVapidError: Invalid VAPID public 
 2024-06-26 07:27:23,322 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:27:23] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 5 0.008 1.912
 2024-06-26 07:30:10,558 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
 2024-06-26 07:30:10,584 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.026s). 
+2024-06-26 07:39:10,728 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete: Sync with remote DB`. 
+2024-06-26 07:39:10,764 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `Partner Autocomplete: Sync with remote DB` (0.036s). 
+2024-06-26 07:39:10,801 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2024-06-26 07:39:10,841 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `SMS: SMS Queue Manager` (0.040s). 
+2024-06-26 07:39:10,881 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2024-06-26 07:39:10,913 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `Snailmail: process letters queue` (0.032s). 
+2024-06-26 07:39:10,937 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2024-06-26 07:39:15,092 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `Mail: Email Queue Manager` (4.147s). 
+2024-06-26 07:39:15,132 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2024-06-26 07:39:15,172 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `Notification: Send scheduled message notifications` (0.032s). 
+2024-06-26 07:39:24,946 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2024-06-26 07:39:24,956 14364 INFO odoo_17 odoo.addons.base.models.ir_cron: Job done: `payment: post-process transactions` (0.011s). 
+2024-06-26 07:39:33,565 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:33] "GET /web HTTP/1.1" 200 - 74 0.143 1.982
+2024-06-26 07:39:35,481 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:35] "POST /web/action/load HTTP/1.1" 200 - 9 0.015 0.030
+2024-06-26 07:39:36,026 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:36] "POST /mail/init_messaging HTTP/1.1" 200 - 50 0.139 0.062
+2024-06-26 07:39:36,076 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:36] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 4 0.016 0.013
+2024-06-26 07:39:36,131 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:36] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.008 0.032
+2024-06-26 07:39:36,158 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:36] "GET /bus/websocket_worker_bundle?v=1.0.7 HTTP/1.1" 304 - 4 0.008 0.009
+2024-06-26 07:39:36,396 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:36] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 47 0.088 0.127
+2024-06-26 07:39:36,452 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:36] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.004 0.017
+2024-06-26 07:39:36,521 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:36] "POST /web/dataset/call_kw/mail.partner.device/register_devices HTTP/1.1" 200 - 7 0.007 0.028
+2024-06-26 07:39:36,606 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:36] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.002 0.003
+2024-06-26 07:39:36,646 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:36] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.010
+2024-06-26 07:39:36,826 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:36] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.043 0.050
+2024-06-26 07:39:36,876 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:36] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.019 0.124
+2024-06-26 07:39:36,886 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:36] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.024 0.012
+2024-06-26 07:39:39,929 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:39] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.003 0.015
+2024-06-26 07:39:56,541 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:56] "POST /web/action/load HTTP/1.1" 200 - 8 0.007 0.021
+2024-06-26 07:39:56,923 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:56] "POST /web/dataset/call_kw/base.module.update/get_views HTTP/1.1" 200 - 9 0.009 0.021
+2024-06-26 07:39:57,161 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:57] "POST /web/dataset/call_kw/base.module.update/onchange HTTP/1.1" 200 - 2 0.005 0.015
+2024-06-26 07:39:58,299 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:39:58] "POST /web/dataset/call_kw/base.module.update/web_save HTTP/1.1" 200 - 5 0.014 0.010
+2024-06-26 07:39:58,647 14364 INFO odoo_17 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user mbisyri33@gmail.com #2 via 127.0.0.1 
+2024-06-26 07:40:00,362 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:40:00] "POST /web/dataset/call_button HTTP/1.1" 200 - 1316 0.874 0.861
+2024-06-26 07:40:26,535 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:40:26] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.050 0.062
+2024-06-26 07:40:26,885 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:40:26] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.005 0.013
+2024-06-26 07:40:27,126 14364 INFO ? werkzeug: 127.0.0.1 - - [26/Jun/2024 07:40:27] "GET /base/static/description/icon.png HTTP/1.1" 304 - 0 0.000 0.003
+2024-06-26 07:40:28,609 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:40:28] "POST /web/dataset/call_button HTTP/1.1" 200 - 1 0.001 0.008
+2024-06-26 07:40:28,969 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:40:28] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 7 0.007 0.026
+2024-06-26 07:40:29,370 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:40:29] "POST /web/dataset/call_kw/ir.module.module/web_read HTTP/1.1" 200 - 10 0.016 0.164
+2024-06-26 07:40:29,639 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:40:29] "GET /web/bundle/web_editor.backend_assets_wysiwyg?lang=en_US&debug=1 HTTP/1.1" 200 - 7 0.006 0.180
+2024-06-26 07:40:30,233 14364 INFO odoo_17 werkzeug: 127.0.0.1 - - [26/Jun/2024 07:40:30] "GET /web/image?model=ir.module.module&id=607&field=icon_image&unique=1719387598000 HTTP/1.1" 200 - 3 0.018 0.020
