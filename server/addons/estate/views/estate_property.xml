@@ -8,6 +8,8 @@
                 <search>
                     <field name="name" />
                     <field name="postcode" />
+                    <!-- custom filter -->
+                    <filter name="Postcode > 0" domain="[('postcode', '&gt;', 0)]" /> 
                 </search>
             </field>
         </record>
