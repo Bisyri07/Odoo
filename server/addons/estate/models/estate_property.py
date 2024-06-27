@@ -6,11 +6,11 @@ class EstateProperty(models.Model):
 
 
     name = fields.Char(string="name", required=True)
-    description = fields.Text(default="Estate Property Description")
+    description = fields.Text(default="You can change this description")
     postcode = fields.Char()
-    date_availability = fields.Date()
+    date_availability = fields.Date(dafault=fields.Datetime.now)
     expected_price = fields.Float()
-    selling_price = fields.Float()
+    selling_price = fields.Float(default=100000000)
     bedrooms = fields.Integer()
     living_area = fields.Integer()
     facades = fields.Integer()
@@ -23,3 +23,4 @@ class EstateProperty(models.Model):
         ],
         string = "Garden Orientation",
     )
+    last_seen = fields.Datetime("Last Seen", default=fields.Datetime.now)
