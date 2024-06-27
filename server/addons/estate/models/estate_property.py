@@ -28,6 +28,22 @@ class EstateProperty(models.Model):
             if record.expected_price <= record.selling_price:
                 raise ValidationError("The expected value must higher than selling price")
 
+    # computed field using python decorator
+    @api.depends('living_area', 'garden_area')
+    def _compute_total_area(self):
+        for a in self:
+            a.total_area = a.living_area + a.garden_area
+
+    # create decorator for condition
+    @api.onchange("garden")
+    def _onchange_garden(self):
+        if self.garden:
+            self.garden_area = 10
+            self.garden_orientation = "N"
+        else:
+            self.garden_area = 0
+            self.garden_orientation = False
+            
 
     name = fields.Char(string="name", required=True)
     description = fields.Text(default="You can change this description")
@@ -48,3 +64,31 @@ class EstateProperty(models.Model):
         string = "Garden Orientation",
     )
     last_seen = fields.Datetime("Last Seen", default=fields.Datetime.now)
+
+    user_id = fields.Many2one("res.users", 
+                              string="salesman", 
+                              default=lambda self: self.env.user)
+    
+    buyer_id = fields.Many2one("res.users",
+                               string="buyer", 
+                               readonly=True,
+                               copy=False)
+    
+    total_area = fields.Integer(readonly=True,
+                                compute="_compute_total_area")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
