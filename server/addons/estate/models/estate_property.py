@@ -1,5 +1,5 @@
 from odoo import models, fields, api
-from odoo.exceptions import ValidationError
+from odoo.exceptions import ValidationError, UserError
 
 class EstateProperty(models.Model):
     _name = "estate.property"
@@ -34,7 +34,7 @@ class EstateProperty(models.Model):
         for a in self:
             a.total_area = a.living_area + a.garden_area
 
-    # create decorator for condition
+    # python decorator for condition
     @api.onchange("garden")
     def _onchange_garden(self):
         if self.garden:
@@ -76,6 +76,33 @@ class EstateProperty(models.Model):
     
     total_area = fields.Integer(readonly=True,
                                 compute="_compute_total_area")
+    
+    # states (status of a record within a workflow)
+    state = fields.Selection(
+        selection=[
+            ("new", "New"),
+            ("ready", "Ready"),
+            ("offer_received", "Offer Received"),
+            ("offer_accepted", "Offer Accepted"),
+            ("sold", "Sold"),
+            ("canceled", "Canceled"),
+        ],
+        string="Status",
+        required=True,
+        copy=False,
+        default="new"
+    )
+    
+    # condition for action button
+    def action_sold(self):
+        if "canceled" in self.mapped("state"):
+            raise UserError("Canceled property cannot be sold.")
+        return self.write({"state": "sold"})
+    
+    def action_cancel(self):
+        if "sold" in self.mapped("state"):
+            raise UserError("Sold properties cannot be canceled.")
+        return self.write({"state": "canceled"})
 
 
 
