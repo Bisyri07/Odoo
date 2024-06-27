@@ -13,7 +13,7 @@
                 </search>
             </field>
         </record>
-        
+
         <!-- view list -->
         <record id="estate_property_view_tree" model="ir.ui.view">
             <field name="name">Estate Property List</field>
@@ -23,6 +23,7 @@
                     <field name="name" />
                     <field name="postcode" />
                     <field name="date_availability" />
+                    <field name="state" />
                 </tree>
             </field>
         </record>
@@ -85,6 +86,7 @@
                                 <page string="Additional Informaiton">
                                     <group>
                                         <field name="total_area" />
+                                        <field name="state" />
                                     </group>
                                 </page>
                             </notebook>
