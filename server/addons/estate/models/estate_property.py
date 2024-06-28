@@ -123,6 +123,12 @@ class EstateProperty(models.Model):
         
         return super().unlink()
 
+    
+    # scheduler
+    def update_status_scheduler(self):
+        if not self.date_availability:
+            self.env["estate.property"].search([('date_availability', '=', False)]).write({"state":"canceled"}) 
+
 
 
 
