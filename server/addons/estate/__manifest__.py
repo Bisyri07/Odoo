@@ -13,6 +13,7 @@
         'security/ir.model.access.csv',    
         'views/menu.xml',
         'views/estate_property.xml',
-        'data/estate.property.csv'      # dummy data
+        'data/estate.property.csv',      # dummy data
+        'views/estate_property_scheduler.xml'
     ]
 }
