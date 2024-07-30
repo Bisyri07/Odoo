@@ -47,6 +47,12 @@
                         string="Cancel" 
                         invisible="state == 'canceled' or state=='offer_accepted'" />
 
+                        <!-- send email button -->
+                        <button 
+                        name="action_send_email" 
+                        type="object" 
+                        string="Send Email" /> 
+
                         <field 
                         name="state" 
                         widget="statusbar" 

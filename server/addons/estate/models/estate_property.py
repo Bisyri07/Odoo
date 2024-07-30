@@ -49,8 +49,8 @@ class EstateProperty(models.Model):
 
     name = fields.Char(string="Name", required=True)
     description = fields.Text(default="You can change this description")
-    postcode = fields.Char(string="Postcode")
-    date_availability = fields.Date(dafault=fields.Datetime.now)
+    postcode = fields.Char(string="Post Code")
+    date_availability = fields.Date(string='Date Availability', default=fields.Datetime.now)
     expected_price = fields.Float()
     selling_price = fields.Float(default=100000000)
     bedrooms = fields.Integer()
@@ -130,11 +130,24 @@ class EstateProperty(models.Model):
             self.env["estate.property"].search([('date_availability', '=', False)]).write({"state":"canceled"}) 
 
 
+    # sending an email
+    def action_send_email(self):
+        template = self.env.ref("estate.simple_example_email_template")
+        email_values = {
+            "email_to": "mbisyri33@gmail.com",
+            "email_cc": False,
+            "auto_delete": True,
+            "recipient_ids": [],
+            "partner_ids": [],
+            "scheduled_date": False,
+            "email_from": "mbisyri22@gmail.com",
+        }
 
-
-
-
-
+        template.send_mail(
+            self.id,
+            email_values = email_values,
+            force_send = True,
+        )
 
 
 

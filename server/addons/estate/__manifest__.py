@@ -1,7 +1,7 @@
 {
     'name': 'Estate',
     'version': '1.0',
-    'depends': ['base'],
+    'depends': ['base','mail'],
     'author': 'Bisyri',
     'category': 'App',
     'description': 
@@ -10,10 +10,17 @@
                     """,
     'application': True,
     'data': [
+        # security
         'security/ir.model.access.csv',    
+        # email template
+        'views/templates/email_templates.xml',
+        # menu
         'views/menu.xml',
+        # estate property CRUD form
         'views/estate_property.xml',
-        'data/estate.property.csv',      # dummy data
-        'views/estate_property_scheduler.xml'
+        # dummy data
+        'data/estate.property.csv',  
+        # scheduler
+        'views/estate_property_scheduler.xml',
     ]
 }
