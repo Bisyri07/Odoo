@@ -97,6 +97,8 @@ class EstateProperty(models.Model):
 
     property_type_id = fields.Many2one("estate.property.type", string="Property Type")
 
+    offer_ids = fields.One2many("estate.property.offer", "property_id", string="Offers")
+
     # condition for action button
     def action_sold(self):
         if "canceled" in self.mapped("state"):
