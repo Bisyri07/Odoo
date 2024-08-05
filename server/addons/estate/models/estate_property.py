@@ -71,7 +71,7 @@ class EstateProperty(models.Model):
                               string="salesman", 
                               default=lambda self: self.env.user)
     
-    buyer_id = fields.Many2one("res.users",
+    buyer_id = fields.Many2one("res.partner",
                                string="buyer", 
                                readonly=True,
                                copy=False)
@@ -95,6 +95,7 @@ class EstateProperty(models.Model):
         default="new"
     )
 
+    property_type_id = fields.Many2one("estate.property.type", string="Property Type")
 
     # condition for action button
     def action_sold(self):

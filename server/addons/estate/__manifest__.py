@@ -10,17 +10,22 @@
                     """,
     'application': True,
     'data': [
-        # security
-        'security/ir.model.access.csv',    
-        # email template
+        # SECURITY
+        'security/ir.model.access.csv',  
+
+        # TEMPLATE (email template)
         'views/templates/email_templates.xml',
-        # menu
-        'views/menu.xml',
-        # estate property CRUD form
-        'views/estate_property.xml',
-        # dummy data
-        'data/estate.property.csv',  
-        # scheduler
+
+        # VIEWS (estate property CRUD form)
+        'views/estate_property.xml',   
+        # VIEWS (scheduler)
         'views/estate_property_scheduler.xml',
+        # VIEWS (property type)
+        'views/estate_property_type.xml',
+        # VIEWS (menu)
+        'views/menu.xml', # the order must be like this
+
+        # LOAD DATA (dummy data) 
+        'data/estate.property.csv',
     ]
 }
