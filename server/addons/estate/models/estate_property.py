@@ -99,6 +99,8 @@ class EstateProperty(models.Model):
 
     offer_ids = fields.One2many("estate.property.offer", "property_id", string="Offers")
 
+    tag_ids = fields.Many2many("estate.property.tag", string="Tags")
+
     # condition for action button
     def action_sold(self):
         if "canceled" in self.mapped("state"):

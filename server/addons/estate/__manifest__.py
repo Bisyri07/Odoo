@@ -24,6 +24,8 @@
         'views/estate_property_type.xml',
         # VIEWS (property offer)
         'views/estate_property_offer.xml',
+        # VIEWS (property tag)
+        'views/estate_property_tag.xml',
         # VIEWS (menu)
         'views/menu.xml', # the order must be like this
 
