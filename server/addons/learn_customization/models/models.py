@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
 
 
 # class learn_customization(models.Model):
@@ -18,14 +18,20 @@
 #             record.value2 = float(record.value) / 100
 
 
-# class EstatePropertyTagInheritance(models.Model):
-#     _inherit = "estate.property.tag"
+class EstatePropertyTagInheritance(models.Model):
+    _inherit = "estate.property.tag"
 
-#     priority = fields.Integer(string="Tag Priority", default=0 )
-    # color = fields.Integer(string="Color Index Overriden field", required=True)
+    priority = fields.Integer(string="Tag Priority", default=0 )
+    # color = fields.Integer(string="Color Index Updated field", required=True) # ga bisa di ganti disini
 
-    # def inherited_action(self):
-    #     return super().inherited_action()
+    # def create(self):
+    # 	# put your codes here
+    #     return super().create()
+
+class SalesOrderInherited(models.Model):
+    _inherit = "sale.order"
+
+    client_doc_number = fields.Char(string="SO Client Number")
 
 
 
