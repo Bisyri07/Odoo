@@ -35,5 +35,10 @@
         # REPORTS
         'views/reports/output_pdf/estate_property.xml',
 
-    ]
+    ],
+    'assets': {
+        'web.report_assets_common': [
+            'estate/static/src/css/ep_report_style.css',
+        ],
+    },
 }
