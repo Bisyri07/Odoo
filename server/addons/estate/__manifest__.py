@@ -31,5 +31,9 @@
 
         # LOAD DATA (dummy data) 
         'data/estate.property.csv',
+
+        # REPORTS
+        'views/reports/output_pdf/estate_property.xml',
+
     ]
 }
