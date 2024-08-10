@@ -1,5 +1,17 @@
 <odoo>
     <data>
+
+      <template id="report_estate_inherit" 
+                inherit_id="estate.report_estate_property_document">
+
+        <xpath expr="//tr" position="before">
+          <h1>
+            DATA BARANG
+          </h1>
+        </xpath>
+
+      </template>
+
 <!--
         <template id="listing">
           <ul>
